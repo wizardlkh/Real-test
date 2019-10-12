@@ -8,7 +8,7 @@ int N, cnt = 0;
 long long D[1000001][15]; // 15! < 10^12
 bool vst[1000001][15];
 vector<int> v;
-//priority_queue<long long, vector<long long>, greater<long long>> pq; // ³»¸²Â÷¼ø
+//priority_queue<long long, vector<long long>, greater<long long>> pq; // Â³Â»Â¸Â²Ã‚Ã·Â¼Ã¸
 set<long long> s;
 
 void m_dfs(int st, int n)
@@ -33,7 +33,7 @@ int main()
 	for (int i = 1; i < 1000001; i++)
 		D[i][1] = i;
 
-	// DP»ý¼º
+	// DPÂ»Ã½Â¼Âº
 	for (int i = 1; i < 1000000; i++)
 	{
 		for (int j = 1; j < 15; j++)
